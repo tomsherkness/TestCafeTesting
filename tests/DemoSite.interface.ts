@@ -16,3 +16,13 @@ export interface OperatingSystemChoices {
     macOsRadio: string
     linuxOsRadio: string
 }
+
+export interface TestCafeInterfaceChoices {
+    commandLine: string
+    javascriptApi: string
+    both: string
+}
+
+export interface CommentSectionText {
+    commentAreaText: string
+}

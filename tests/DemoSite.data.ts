@@ -1,4 +1,4 @@
-import { DemoSiteInputs, FeatureImportanceCheckboxes, OperatingSystemChoices } from "./DemoSite.interface";
+import { CommentSectionText, DemoSiteInputs, FeatureImportanceCheckboxes, OperatingSystemChoices, TestCafeInterfaceChoices } from "./DemoSite.interface";
 
 export const demoSiteInputs: DemoSiteInputs = {
     developerName: 'Developer Tester',
@@ -17,4 +17,14 @@ export const operatingSystemRadioChoices: OperatingSystemChoices = {
     windowsOsRadio: 'Windows',
     macOsRadio: 'MacOS',
     linuxOsRadio: 'Linux'
+}
+
+export const testcafeInterfaceChoices: TestCafeInterfaceChoices = {
+    commandLine: 'Command Line',
+    javascriptApi: 'JavaScript API',
+    both: 'Both'
+}
+
+export const commentSectionText: CommentSectionText = {
+    commentAreaText: 'TestCafe is very easy and lightweight to use. Thank you TestCafe devs!'
 }
