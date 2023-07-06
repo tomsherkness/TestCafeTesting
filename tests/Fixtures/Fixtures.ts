@@ -1,15 +1,13 @@
-import { fixture } from "testcafe"
-
-const defaultPage = 'https://devexpress.github.io/testcafe/example/'
+import { fixture } from 'testcafe'
+import { defaultPage } from '../DemoSite.data'
 
 class Fixtures {
-
-    DefaultFixture = async (fixtureName: string) => {
-        fixture(fixtureName)
-        .page(defaultPage)
-        .beforeEach(async t => {
-            await t.setNativeDialogHandler(() => true)
-        })
-    }
+  DefaultFixture = async (fixtureName: string) => {
+    fixture(fixtureName)
+      .page(defaultPage)
+      .beforeEach(async t => {
+        await t.setNativeDialogHandler(() => true)
+      })
+  }
 }
 export default new Fixtures()

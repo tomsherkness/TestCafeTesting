@@ -1,0 +1,7 @@
+node_modules
+test-artifacts
+
+.prettierrc.json
+.testcaferc.cjs
+package-lock.json
+package.json

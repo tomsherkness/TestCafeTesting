@@ -1,17 +1,17 @@
-import { Selector } from "testcafe"
+import { Selector } from 'testcafe'
 
 export class TextInputByTestId {
-    selector: Selector
+  selector: Selector
 
-    constructor(elementType: string, testId: string){
-        this.selector = Selector(elementType).withAttribute('data-testid', testId)
-    }
+  constructor(elementType: string, testId: string) {
+    this.selector = Selector(elementType).withAttribute('data-testid', testId)
+  }
 
-    typeText (t: TestController, text: string) {
-        return t.typeText(this.selector, text, { replace: true })
-    }
+  typeText(t: TestController, text: string) {
+    return t.typeText(this.selector, text, { replace: true })
+  }
 
-    get value(){
-        return this.selector.value
-    }
+  get value() {
+    return this.selector.value
+  }
 }
